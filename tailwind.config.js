@@ -1,0 +1,90 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        darkslategray: "#3a3a41",
+        white: "#fff",
+        darkgray: "rgba(158, 158, 158, 0.2)",
+        gray: {
+          "100": "#222226",
+          "200": "#191919",
+          "300": "rgba(25, 25, 25, 0.6)",
+          "400": "rgba(0, 0, 0, 0.6)",
+          "500": "rgba(0, 0, 0, 0.12)",
+        },
+        sandybrown: "#ffaf51",
+        slategray: "#6c6c85",
+        dimgray: "#545459",
+      },
+      spacing: {},
+      fontFamily: {
+        inter: "Inter",
+        "helvetica-neue": "'Helvetica Neue'",
+      },
+      borderRadius: {
+        "81xl": "100px",
+        lg: "18px",
+        "29xl": "48px",
+        "17xl": "36px",
+      },
+    },
+    fontSize: {
+      "2xs-9": "10.9px",
+      "base-6": "16.6px",
+      base: "16px",
+      "base-3": "16.3px",
+      "base-5": "16.5px",
+      lg: "18px",
+      "base-2": "16.2px",
+      "base-9": "16.9px",
+      xs: "12px",
+      "mid-4": "17.4px",
+      mid: "17px",
+      "2xl-6": "21.6px",
+      "2xl-8": "21.8px",
+      "2xl-9": "21.9px",
+      "2xl-4": "21.4px",
+      "19xl-4": "38.4px",
+      "12xl": "31px",
+      "4xl": "23px",
+      "36xl": "55px",
+      "22xl": "41px",
+      "20xl-3": "39.3px",
+      "5xl": "24px",
+      "19xl-8": "38.8px",
+      "27xl": "46px",
+      "9xl": "28px",
+      smi: "13px",
+      sm: "14px",
+      lgi: "19px",
+      "10xl": "29px",
+      "72xl-3": "91.3px",
+      "8xl": "27px",
+      "50xl-1": "69.1px",
+      "base-7": "16.7px",
+      inherit: "inherit",
+    },
+    screens: {
+      mq1650: {
+        raw: "screen and (max-width: 1650px)",
+      },
+      mq1300: {
+        raw: "screen and (max-width: 1300px)",
+      },
+      mq900: {
+        raw: "screen and (max-width: 900px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
+      },
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};
